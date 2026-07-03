@@ -15,7 +15,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/yt_job_portal_user
     username: postgres
     password: postgres
-    driver-class-name: org.postgres.Driver
+    driver-class-name: org.postgresql.Driver
 
 eureka:
   client:
