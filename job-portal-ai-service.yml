@@ -1,6 +1,5 @@
 server:
-  port: 5007git add .
-  git commit -m "Change AI service port to 5007 to avoid ERR_UNSAFE_PORT"
+  port: 5007
 
 spring:
   application:
@@ -10,7 +9,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: "health,info"
   endpoint:
     health:
       show-details: always
