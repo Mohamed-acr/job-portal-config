@@ -17,3 +17,14 @@ spring:
 
 server:
   port: 5006
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
+  endpoint:
+    health:
+      show-details: always
+    info:
+      enabled: true
