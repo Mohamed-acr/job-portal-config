@@ -20,3 +20,12 @@ spring:
 eureka:
   client:
     fetch-registry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,actuator
+  endpoint:
+    health:
+      show-details: always
